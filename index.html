@@ -81,6 +81,8 @@ love to get your feedback as well.
 
 <aside class="notes">
 
+If I don't know the answer, I can always ignore you!
+
 </aside>
 </section>
 <section>
@@ -120,9 +122,12 @@ love to get your feedback as well.
 
 <h2 id="our-fictional-client">Our fictional client</h2>
 
-<p>Government Agency for Bear Attacks (GABA)</p>
+<p>Government Agency for Bear Attacks</p>
 
 <aside class="notes">
+
+This fictional organization will help make things a little more concrete.
+Explain how they'll use Fulcrum.
 
 </aside>
 </section>
@@ -198,7 +203,6 @@ love to get your feedback as well.
 
 <h2 id="why-do-we-have-apis">Why do we have APIs?</h2>
 
-
 <aside class="notes">
 
 Can you shout out some reasons for why we have APIs?
@@ -215,8 +219,6 @@ And I want to focus on one in particular.
 
 <aside class="notes">
 
-Once they have their data, they can do a lot of things with it.
-
 </aside>
 </section>
 <section>
@@ -228,8 +230,8 @@ Once they have their data, they can do a lot of things with it.
 <aside class="notes">
 
 When our clients want their data, they make a request to our servers.
-And to make things a little more concrete, let's say our client is a
-government agency collecting data on bear attacks.
+The people in the office will use our API to get our their data on bear
+attacks.
 
 </aside>
 </section>
@@ -245,7 +247,6 @@ Their data is important. Taking action on it is valuable. Acting quickly gives
 them an advantage.
 They can share it with the public. Analyze it. Try to prevent more bear
 attacks.
-
 
 </aside>
 </section>
@@ -681,9 +682,9 @@ end
   <li>Send a webhook to our client with that number</li>
 </ul>
 
-<p>We have a client server running, which receives the webhook</p>
+<p>We’ll have a client server running, <a href="https://github.com/kyletolle/polis.rb">Polis.rb</a></p>
 
-<p>A simple web server which logs POST data</p>
+<p>A small web server which logs POST data</p>
 
 <aside class="notes">
 
@@ -1001,9 +1002,9 @@ understand how other people use them.
 <h2 id="other-things-to-think-about">Other things to think about</h2>
 
 <ul>
-  <li>Persisting requests</li>
   <li>Use background jobs</li>
   <li>Send requests sequentially</li>
+  <li>Persisting requests</li>
   <li>Handle failures</li>
   <li>Performance</li>
 </ul>
@@ -1033,21 +1034,20 @@ But these are for another talk!
 <h2 id="whats-next">What’s Next?</h2>
 
 <ul>
-  <li>Make webhooks easier to debug</li>
-  <li>Add scoping to webhooks</li>
   <li>Create gem(s) to help others add webhooks to their code
     <ul>
       <li>Would you find this useful?</li>
     </ul>
   </li>
   <li>Create/extend tools for using, testing, debugging</li>
+  <li>Make webhooks easier to debug</li>
+  <li>Add scoping to webhooks</li>
 </ul>
 
 <aside class="notes">
 
-Part of my motivation for this talk is to see if others would find a gem
-worthwhile. Perhaps webhooks are too custom to really use a gem? Anyway, if
-you're interested, I'd love to talk to you!
+I'd like to hear from you if you think a gem would be helpful in adding
+webhooks to your project.
 
 </aside>
 </section>
@@ -1056,14 +1056,14 @@ you're interested, I'd love to talk to you!
 <h2 id="code-i-referenced">Code I Referenced</h2>
 
 <ul>
-  <li>Simple webhooks endpoint
-    <ul>
-      <li><a href="https://github.com/kyletolle/polis.rb">https://github.com/kyletolle/polis.rb</a></li>
-    </ul>
-  </li>
   <li>Webhooks module, random number generator, random number button site
     <ul>
       <li><a href="https://github.com/kyletolle/webhooks.rb">https://github.com/kyletolle/webhooks.rb</a></li>
+    </ul>
+  </li>
+  <li>Simple webhooks endpoint
+    <ul>
+      <li><a href="https://github.com/kyletolle/polis.rb">https://github.com/kyletolle/polis.rb</a></li>
     </ul>
   </li>
   <li>Random number texter
