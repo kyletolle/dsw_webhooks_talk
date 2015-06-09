@@ -753,6 +753,41 @@ end
 </section>
 <section>
 
+<h2 id="client-code">Client code</h2>
+
+<pre><code>...
+class Polis &lt; Sinatra::Base
+  ...
+  post '/' do
+    # Note: Thanks to this SO page: http://stackoverflow.com/a/6318491/249218
+    http_headers = env.select{|h| h =~ /HTTP_/}
+    body_string  = request.body.read
+
+    ...
+
+    logger.info &lt;&lt;-LOG
+      Logging POST request:
+      Headers:
+      #{http_headers}
+      Body:
+      #{body_string}
+
+    LOG
+
+    status 200
+    return body_string
+  end
+
+  ...
+end
+</code></pre>
+
+<aside class="notes">
+
+</aside>
+</section>
+<section>
+
 <h2 id="we-sent-our-first-webhook">We sent our first webhook!</h2>
 
 <aside class="notes">
