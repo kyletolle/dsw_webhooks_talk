@@ -2,7 +2,9 @@
 
 Slides for my intro webhooks in Ruby talk given at Denver.rb on June 9, 2015.
 
-Based on [reveal.js](https://github.com/hakimel/reveal.js).
+The slides were generated with [markdown_to_reveal](https://github.com/kyletolle/markdown_to_reveal).
+
+This talk is based on [reveal.js](https://github.com/hakimel/reveal.js).
 
 ## Installation
 
