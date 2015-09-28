@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Webhooks at Denver Startup Week</title>
+		<title>The Power Behind Real-Time Push Notifications Using Webhooks</title>
 
-		<meta name="description" content="Talk on Webhooks by Kyle Tolle at Denver Startup Week">
+		<meta name="description" content="Denver Startup Week talk on webhooks, by Kyle Tolle.">
 		<meta name="author" content="Kyle Tolle">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -76,7 +76,9 @@ six programming tracks aimed at the entire entrepreneurial team.
 
 <h2 id="please-share-your-experiece">Please share your experiece</h2>
 
-<p>at this session online using #DENStartupWeek</p>
+<p>at this session online using</p>
+
+<h2 id="denstartupweek">#DENStartupWeek</h2>
 
 <aside class="notes">
 
@@ -133,8 +135,7 @@ love to get your feedback as well.
 
 <h3 id="code">Code:</h3>
 
-<p>TODO: Update this link
-<a href="https://github.com/kyletolle/ruby_webhooks_intro">https://github.com/kyletolle/ruby_webhooks_intro</a></p>
+<p><a href="https://github.com/kyletolle/dsw_webhooks_talk">https://github.com/kyletolle/dsw_webhooks_talk</a></p>
 
 <aside class="notes">
 
@@ -1304,10 +1305,16 @@ our service.</p>
   - Support emails get put into slack
   - Support tickets from tender get put into slack
   - Support chats from intercom get put into slack
-  - Github commits, issues, and PRs get put into slack
-  -</p>
+  - Github commits, issues, and PRs get put into slack</p>
 
 <p>TODO: What about Slack Incoming/Outgoing webhooks? Look at the docs.</p>
+
+
+<aside class="notes">
+
+</aside>
+</section>
+<section>
 
 <h2 id="how-people-use-webhooks-in-fulcrum">How people use webhooks in Fulcrum</h2>
 
@@ -1317,11 +1324,19 @@ Syncing data to CartoDB for visualization.
 Sending email notifications to manager when a new record is created and the
 status is “needs immediate attention.”</p>
 
+
+<aside class="notes">
+
+</aside>
+</section>
+<section>
+
 <h2 id="use-webhooks-as-a-notification">Use webhooks as a notification</h2>
 
 <p>Our API serves up records JSON which needs to be cross referenced with the
-form schema to understand it. (This is what makes fulcrum so flexible.) So you
-have to parse through it, which isn’t fun to do for simple tasks.</p>
+form JSON, which is the schema to understand it. (This is what makes fulcrum
+so flexible.) So you have to parse through it, which isn’t fun to do for
+simple tasks.</p>
 
 <p>If you treat the webhook like a notification, then fetch the data from another
 endpoint which is more human readable, that’s also a possibility. Makes it
@@ -1331,7 +1346,18 @@ super easy to do certain things like update external databases this way.</p>
 Explain data shares a little. Easy way to share your data with external people
 who don’t need accounts. It’s like a public, read-only feed of your data.</p>
 
-<h2 id="push-bullet-for-push-notifications">Push bullet for push notifications</h2>
+<p>Data shares are more easily consummable than the JSON from the API. Makes
+simple integrations easier to set up, since you don’t have to parse the data
+schema and the data.</p>
+
+
+<aside class="notes">
+
+</aside>
+</section>
+<section>
+
+<h2 id="pushbullet-for-push-notifications">Pushbullet for push notifications</h2>
 
 <p>Someone in the office assigns a record
 That person who needs to do the work is texted a link
@@ -1340,6 +1366,77 @@ some information.</p>
 
 <p>Could do something like notify people within a certain geographic area. You
 could also assign the person who is known to be the closest.</p>
+
+<h2 id="google-app-scripts">Google App Scripts</h2>
+
+<p>No server setup.</p>
+
+<p>Create a JS script, just like you would a Google Doc.</p>
+
+<p>Share it just like a google doc as well.</p>
+
+<aside class="notes">
+
+No heroku or setting up a PHP server.
+
+
+</aside>
+</section>
+<section>
+
+<h2 id="webhooks-as-a-workflow">Webhooks as a Workflow</h2>
+
+<p>When a record is submitted, you can use a webhook to fetch data from another
+web service (like weather information), and then use the API to update the
+record. Automatically fetch weather information, based on the location.</p>
+
+<p>Jason wrote a blog post about using the weather information. Bryan
+wants to do something like this for GeoBooze to add ABV data.</p>
+
+<p>Allows you to programattically add data from another service, based on
+whatever rules you want.</p>
+
+<aside class="notes">
+
+</aside>
+</section>
+<section>
+
+<h2 id="agnostic">Agnostic</h2>
+
+<p>They can use PHP or Ruby or Node or Java or whatever they want.</p>
+
+<p>As long as it can read JSON.</p>
+
+<p>We’re not writing custom libraries to support all different environments too</p>
+
+<aside class="notes">
+
+</aside>
+</section>
+<section>
+
+<h2 id="integration">Integration</h2>
+
+<p>Our users can do all sorts of custom things. We can help them get set up, or
+they can do it themselves. But it’s nice that it’s a standard approach for
+each of these customers. The entire world isn’t one-off.</p>
+
+<p>Lowers the barrier to integrations. They can read the docs and get started
+themselves.
+It’s a force multiplier.</p>
+
+<p>We don’t have a huge engineering team, so it allows us to have a greater
+impact.</p>
+
+<p>We don’t need a developer to add stuff to our core product for these
+integrations.</p>
+
+<aside class="notes">
+
+</aside>
+</section>
+<section>
 
 
 <aside class="notes">
@@ -1409,14 +1506,26 @@ webhooks to your project.
   </li>
 </ul>
 
-
 <aside class="notes">
 
 </aside>
 </section>
 <section>
 
+<h2 id="id-love-your-feedback">I’d love your Feedback</h2>
+
+<aside class="notes">
+
+How did I do with my talk?
+How you'd use webhooks?
+Or thoughts on this topic in general.
+
+</aside>
+</section>
+<section>
+
 <h1 id="thanks">Thanks!</h1>
+
 
 <aside class="notes">
 
