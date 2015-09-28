@@ -1,6 +1,6 @@
-# Ruby Webhooks Intro
+# The Power Behind Real-Time Push Notifications Using Webhooks
 
-Slides for my intro webhooks in Ruby talk given at Denver.rb on June 9, 2015.
+Slides for my webhooks talk given given at Denver Startup Week on September 29, 2015.
 
 The slides were generated with [markdown_to_reveal](https://github.com/kyletolle/markdown_to_reveal).
 
