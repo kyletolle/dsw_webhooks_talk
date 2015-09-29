@@ -67,8 +67,8 @@ North America.
 
 <aside class="notes">
 
-This session is part of the Developer Track, sponsored by Pivotal Labs, one of
-six programming tracks aimed at the entire entrepreneurial team.
+This session is part of the Developer Track, sponsored by Pivotal Labs. It's
+one of six programming tracks aimed at the entire entrepreneurial team.
 
 </aside>
 </section>
@@ -111,6 +111,8 @@ collection service</p>
 Ours have been in operation for about a year and a half. I wanted to share
 what I've learned. Maybe you'll find it useful or interesting. And I would
 love to get your feedback as well.
+To date, our system has handled over 11.3 million webhook requests.
+
 
 </aside>
 </section>
@@ -167,7 +169,6 @@ Trying to get a feel for what familiarity people have with the topic.
   <li>Barebones webhooks demo</li>
   <li>Webhooks integration demo</li>
   <li>Other use cases for webhooks</li>
-  <li>Demonstrate the value to your manager</li>
   <li>Recapping and wrapping up</li>
 </ul>
 
@@ -932,6 +933,23 @@ Allowing others to act right when there's something to act on.
 </section>
 <section>
 
+<h3 id="the-idea">The Idea</h3>
+
+<ul>
+  <li>Generate a random number</li>
+  <li>Send a webhook to our client with that number</li>
+</ul>
+
+<p>We’ll have a client server running, <a href="https://github.com/kyletolle/polis.rb">Polis.rb</a></p>
+
+<p>A small web server which logs POST data</p>
+
+<aside class="notes">
+
+</aside>
+</section>
+<section>
+
 <h2 id="random-number-generator">Random Number Generator</h2>
 
 <pre><code>require_relative '../lib/webhooks'
@@ -953,23 +971,6 @@ class RandomNumberGenerator
 end
 </code></pre>
 
-
-<aside class="notes">
-
-</aside>
-</section>
-<section>
-
-<h3 id="the-idea">The Idea</h3>
-
-<ul>
-  <li>Generate a random number</li>
-  <li>Send a webhook to our client with that number</li>
-</ul>
-
-<p>We’ll have a client server running, <a href="https://github.com/kyletolle/polis.rb">Polis.rb</a></p>
-
-<p>A small web server which logs POST data</p>
 
 <aside class="notes">
 
@@ -1090,6 +1091,12 @@ end
 
 <h2 id="theres-no-official-spec">There’s no official spec</h2>
 
+<aside class="notes">
+
+</aside>
+</section>
+<section>
+
 <p>It’s a general practice to</p>
 
 <h3 id="send-data-to-a-url">Send data to a URL</h3>
@@ -1106,9 +1113,9 @@ The data we send is a JSON encoded string.
 
 <h2 id="requires-some-effort">Requires some effort</h2>
 
-<p>Because it’s a general pattern</p>
+<p>to implement the specifics</p>
 
-<p>people have to implement the specifics</p>
+<p>but the idea has been around for a while</p>
 
 <aside class="notes">
 
@@ -1366,7 +1373,7 @@ webhooks here. That's awesome!
 </section>
 <section>
 
-<p>They may not are about webhooks at first, but</p>
+<p>They may not care about webhooks at first, but</p>
 
 <h2 id="clients-can-grow-into-them">Clients can grow into them</h2>
 
